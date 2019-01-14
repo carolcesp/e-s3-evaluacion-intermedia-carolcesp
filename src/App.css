@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  background-color: lightcoral;
+  background-color: white;
   margin:50px;
   text-align: center;
   display: flex;
@@ -12,16 +12,20 @@
 .pokemon__list{
   display: flex;
   flex-wrap: wrap;
-  background-color: pink;
-  
 }
 .pokemon__list--li{
+  background-color: rgb(208, 237, 247);
   border:2px solid black;
+  border-radius: 10px;
+  margin: 20px;
   display:flex;
   flex-direction: column;
 
 }
-.img__pokemon{
+.image__pokemon--style{
   width: 200px;
   height: 200px;
+}
+.pokemon__list--li--types{
+  
 }
