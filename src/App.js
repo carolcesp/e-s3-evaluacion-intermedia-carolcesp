@@ -20,10 +20,24 @@ class App extends Component {
     }
   }
       render() {
+        const {pokemon} = this.state;
         return (
           <div className="App">
-            <h1>vamos a ello!</h1>
-          </div>
+              <ul className="pokemon__list">{pokemon.map((item) => {
+                  return(
+                    <li className="pokemon__list--li">
+                      <img
+                        className="img__pokemon"
+                        src={item.url}
+                        alt="image pokemon"
+                      />
+                      <h1>{item.name} </h1>
+                      {item.types}
+                    </li>
+                   )
+                 })}
+               </ul>
+           </div>
         );
       }
 }
