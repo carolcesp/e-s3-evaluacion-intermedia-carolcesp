@@ -24,6 +24,7 @@ class App extends Component {
         const {pokemon} = this.state;
           return (
             <div className="App">
+              <h1>Mi lista de pokemon</h1>
               <PokeList pokemon={pokemon}/> 
             </div>
           );

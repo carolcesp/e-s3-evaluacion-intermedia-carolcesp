@@ -13,7 +13,7 @@ export class Pokemon extends Component {
                     />  
               </div>
               <div className="content_name-types">
-              <h1 className="name">{item.name}</h1>
+              <h2 className="name">{item.name}</h2>
                 <ul className="pokemon__list--types">
                   {item.types.map((itemList,index) => {
                     return(
