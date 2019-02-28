@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PokeList from './components/PokeList'
-import './App.css';
+import avatar from './poke.png'
+import './App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -23,10 +24,16 @@ class App extends Component {
       render() {
         const {pokemon} = this.state;
           return (
-            <div className="App">
-              <h1>Mi lista de pokemon</h1>
+            <React.Fragment>
+              <header className="App">
+              <img className="header__avatar" src={avatar}/>
+              <h1 className="header__title">Mi lista de pokemon</h1>
+            </header>
+            <main>
               <PokeList pokemon={pokemon}/> 
-            </div>
+            </main>
+            </React.Fragment>
+            
           );
         }
   }

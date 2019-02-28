@@ -2,20 +2,35 @@
   width: 100vw;
   background-color: white;
   margin:50px;
-  text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.header__avatar{
+  text-align: center;
+  width: 200px;
+  height: 70px;
+    @media all and(min-width:768px) {
+      width: 350px;
+      height: 100px;
+    }
+    @media all and(min-width:1020px) {
+      width: 500px;
+      height: 150px;
+  }
+}
+.header__title{
+  color: black;
+}
 .pokemon__list{
   display: flex;
   flex-wrap: wrap;
 }
 .pokemon__list--li{
-  background-color: rgb(208, 237, 247);
-  border:2px solid black;
+  background-color: rgb(216, 218, 218);
+  border:5px ridge rgb(255, 255, 93);
   border-radius: 10px;
   margin: 20px;
   display:flex;
@@ -29,25 +44,24 @@
 .pokemon__list--types{
   padding: 0;
   margin-bottom: 10px;
-  text-align: center;
   display:flex;
-  justify-content:flex-start;
   margin-left: 10px;
 }
 .pokemon__list--li--types{
   display:flex;
+  justify-content: center;
   align-items: center;
-  align-self: center;
   width: 60px;
   height: 30px;
-  border:2px solid black;
+  border:5px ridge rgb(255, 255, 93);
   background-color: lightgrey;
   border-radius: 20px;
   list-style: none;
   margin-left: 10px;
 }
 .name{
-  border-top:2px solid black;
-  border-bottom:2px solid black;
+  text-align: center;
+  border-top:2px ridge rgb(255, 255, 93);
+  border-bottom:2px ridge rgb(255, 255, 93);
   text-transform: capitalize;
 }
